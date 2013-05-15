@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="20" height="15" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" source="../TSX/ElysianShadowsTiles.tsx"/>
+ <layer name="Tile Layer 1" width="20" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYmBgYBrFo3gUj+IhgAGH6wJZ
+  </data>
+ </layer>
+ <layer name="Tile Layer 2" width="20" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFIxkUMjIwFAFxMSN1zOsAmtMJxF1UMm8+0JwFQLyQSuaNgqENAExsBNs=
+  </data>
+ </layer>
+ <layer name="Tile Layer 3" width="20" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFtASxQFwGxHFUMq8Eal4plczrhtI9VDIPBC5R0SwQeEll80bB0AUAwF4FYw==
+  </data>
+ </layer>
+</map>
