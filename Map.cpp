@@ -15,10 +15,25 @@ void Map::loadFiles( const char* filename, int c1x, int c1y, int c1w, int c1h, i
 
 bool Map::checkColl( SDL_Rect Player )
 {
-    if ( Player.x 		        <	Coll1.x + Coll1.w 	&&
-		 Player.x + Player.w 	> 	  Coll1.x 	        &&
-		 Player.y		        <	Coll1.y + Coll1.h 	&&
-		 Player.y + Player.h	>	Coll1.y )
+    if ( Coll1.x 		    <	Player.x + Player.w 	&&
+		 Coll1.x + Coll1.w 	> 	Player.x 	            &&
+		 Coll1.y		    <	Player.y + Player.h 	&&
+		 Coll1.y + Coll1.h	>	Player.y )
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+bool Map::checkWarp( SDL_Rect Player )
+{
+    if ( Warp1.x 		    <	Player.x + Player.w 	&&
+		 Warp1.x + Warp1.w 	> 	Player.x 	            &&
+		 Warp1.y		    <	Player.y + Player.h 	&&
+		 Warp1.y + Warp1.h	>	Player.y )
     {
         return true;
     }

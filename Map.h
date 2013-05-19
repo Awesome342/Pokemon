@@ -9,6 +9,7 @@ class Map
     public:
         void loadFiles( const char* filename, int c1x, int c1y, int c1w, int c1h, int w1x, int w1y, int w1w, int w1h );
         bool checkColl( SDL_Rect Player );
+        bool checkWarp( SDL_Rect Player );
         void draw( SDL_Surface *Screen );
 
     private:

@@ -8,6 +8,7 @@ Graphics::Graphics()
 void Graphics::draw()
 {
     Knight.getInput();
+    Map.Update( Knight.returnRect() );
 
     Map.draw( Screen );
     Knight.draw( Screen );
